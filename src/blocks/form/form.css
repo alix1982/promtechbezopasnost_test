@@ -1,0 +1,54 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0 0 15px;
+}
+.form__sortGenre {
+  min-width: 178px;
+  height: 54px;
+  margin: 0;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(121, 121, 121, 0.5);
+  border-radius: 6px;
+}
+.form__sortGenreHeading {
+  display: block;
+  margin: 0;
+  font-family: Roboto, Georgia, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #797979;
+}
+.form__listGenre {
+  display: none;
+}
+.form__sortName {
+  min-width: 178px;
+  height: 54px;
+  margin: 0;
+  padding: 0 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(121, 121, 121, 0.5);
+  border-radius: 6px
+}
+.form__sortNameInput {
+  width: 100%;
+  padding: 0;
+  border: none;
+  background-color: #F4F4F4;
+}
+
+@media screen and (max-width: 500px) {
+  .form {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

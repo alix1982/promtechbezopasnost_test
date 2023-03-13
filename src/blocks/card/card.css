@@ -1,0 +1,49 @@
+.card {
+  width: 150px;
+  height: 385px;
+  margin: 0;
+  padding: 15px 20px 0;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(29, 24, 56, 0.1);
+  border-radius: 10px;
+}
+.card__poster {
+  width: 150px;
+  height: 225px;
+  margin-bottom: 10px;
+  background: #F4F4F4;
+  border-radius: 5px;
+}
+.card__heading {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: Montserrat, Georgia, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1D1838;
+}
+.card__genre {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: Montserrat, Georgia, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #1D1838;
+}
+.card__year {
+  font-family: Montserrat, Georgia, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #1D1838;
+}
+@media screen and (max-width: 500px) {
+  .card {
+    margin: 0 auto;
+  }
+}

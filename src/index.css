@@ -1,0 +1,11 @@
+@import url(vendor/normalize.css);
+/* @import url(vendor/fonts/Inter_Web/inter.css); */
+@import url(blocks/body/body.css);
+@import url(blocks/main/main.css);
+@import url(blocks/form/form.css);
+@import url(blocks/gallery/gallery.css);
+@import url(blocks/bestFilm/bestFilm.css);
+@import url(blocks/card/card.css);
+
+/* outline: red solid 1px; */
+

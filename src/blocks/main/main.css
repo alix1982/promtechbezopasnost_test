@@ -1,0 +1,16 @@
+.main__heading {
+  margin: 0 0 15px;
+  font-family: Montserrat, Georgia, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+}
+.main__bestFilms {
+  margin: 40px 0 44px;
+}
+@media screen and (max-width: 500px) {
+  .main__heading {
+    text-align: center;
+  }
+}
