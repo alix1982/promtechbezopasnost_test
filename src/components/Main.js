@@ -10,11 +10,20 @@ function Main(props) {
       <section>
         <h2 className="main__heading">Популярные фильмы</h2>
         <Form menuArrow = {props.menuArrow}/>
-        <Gallery films={props.films} images={props.images} setGenresFilm={props.setGenresFilm}/>
+        <Gallery 
+          films={props.films}
+          images={props.images}
+          setGenresFilm={props.setGenresFilm}
+          bestCard = {props.bestCard}
+          setBestCard = {props.setBestCard}
+          selectedCard = {props.selectedCard}
+          onSelectedCard={props.onSelectedCard}
+          onCardPopup={props.onCardPopup}
+        />
       </section>
       <section  className="main__bestFilms">
         <h2 className="main__heading">Самый лучший фильм</h2>
-        <BestFilms film={props.film} images={props.images} setGenresFilm={props.setGenresFilm}/>
+        <BestFilms bestCard = {props.bestCard} images={props.images} setGenresFilm={props.setGenresFilm}/>
       </section>
     </main>
   );

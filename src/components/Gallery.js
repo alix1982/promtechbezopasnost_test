@@ -8,7 +8,16 @@ function Gallery(props) {
         {props.films.map((item)=>{
           return (
             <li className="gallery__point" key={item.id}>
-              <Card film={item} setGenresFilm={props.setGenresFilm} images={props.images} />
+              <Card
+                film={item}
+                images={props.images}
+                setGenresFilm={props.setGenresFilm}
+                bestCard = {props.bestCard}
+                setBestCard = {props.setBestCard}
+                selectedCard = {props.selectedCard}
+                onSelectedCard={props.onSelectedCard}
+                onCardPopup={props.onCardPopup}
+              />
             </li>
           )
         })}
