@@ -13,7 +13,11 @@ function App() {
   const [selectedCard, setSelectedCard] = useState({id: -1});
   const [bestCard, setBestCard] = useState({id: -1});
   const [isCardPopupOpen, setIsCardPopup] = useState(false);
-  
+  const [values, setValues] = useState({
+    select: '0',
+    input: ''
+  });
+
   useEffect(() => {
     JSON.parse(localStorage.getItem('bestFilm')) !== null && setBestCard(JSON.parse(localStorage.getItem('bestFilm'))) 
   },[])
@@ -73,7 +77,9 @@ function App() {
           setBestCard = {setBestCard}
           selectedCard = {selectedCard}
           onSelectedCard = {(selectedCard) => {setSelectedCard(selectedCard)}}
-          onCardPopup = {setIsCardPopup} 
+          onCardPopup = {setIsCardPopup}
+          values = {values}
+          setValues = {setValues}
         />
         {/* <Footer /> */}
       </div>

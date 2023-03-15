@@ -5,44 +5,46 @@
   margin: 0 0 15px;
 }
 .form__sortGenre {
-  min-width: 178px;
-  height: 54px;
   margin: 0;
+  padding: 0;
+  border: none;
+}
+.form__listGenre {
+  min-width: 212px;
+  height: 56px;
+  margin: 0 auto;
   padding: 0 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 1px solid rgba(121, 121, 121, 0.5);
   border-radius: 6px;
-}
-.form__sortGenreHeading {
-  display: block;
-  margin: 0;
+  background-color: transparent;
   font-family: Roboto, Georgia, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   color: #797979;
-}
-.form__listGenre {
-  display: none;
+  appearance: none;
+  background: url("../../images/specialImages/menuArrow.svg") no-repeat 92% 50%;
 }
 .form__sortName {
   min-width: 178px;
   height: 54px;
   margin: 0;
-  padding: 0 16px;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgba(121, 121, 121, 0.5);
-  border-radius: 6px
+  border: none;
 }
 .form__sortNameInput {
   width: 100%;
-  padding: 0;
-  border: none;
+  height: 100%;
+  padding: 0 16px;
+  border: 1px solid rgba(121, 121, 121, 0.5);
+  border-radius: 6px;
   background-color: #F4F4F4;
 }
 

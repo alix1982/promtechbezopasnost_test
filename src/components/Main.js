@@ -9,7 +9,11 @@ function Main(props) {
       <h1 aria-label="films"> </h1>
       <section>
         <h2 className="main__heading">Популярные фильмы</h2>
-        <Form menuArrow = {props.menuArrow}/>
+        <Form
+          menuArrow = {props.menuArrow}
+          values = {props.values}
+          setValues = {props.setValues}
+        />
         <Gallery 
           films={props.films}
           images={props.images}
@@ -17,6 +21,8 @@ function Main(props) {
           bestCard = {props.bestCard}
           setBestCard = {props.setBestCard}
           selectedCard = {props.selectedCard}
+          values = {props.values}
+          setValues = {props.setValues}
           onSelectedCard={props.onSelectedCard}
           onCardPopup={props.onCardPopup}
         />
